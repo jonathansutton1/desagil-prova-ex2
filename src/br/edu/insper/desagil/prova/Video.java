@@ -31,12 +31,13 @@ public class Video {
 		}
 	}
 	
-	public long mediaAvaliacoes() {
-		double soma = 0;
+	public int mediaAvaliacoes() {
+		int soma = 0;
+		int quantidade = this.avaliacoes.size();
 		for(int avaliacao:this.avaliacoes.values()) {
 			soma += avaliacao;
 		}
-		long media = Math.round(soma/this.avaliacoes.size());
+		double media = Math.round((double)soma/quantidade);
 		return (int) media;
 			
 	}

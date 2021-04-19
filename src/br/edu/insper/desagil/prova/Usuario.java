@@ -23,12 +23,12 @@ public abstract class Usuario {
 		return video;
 	}
 	
-	public double totalAvaliacoes() {
-		double total = 0;
+	public int totalAvaliacoes() {
+		int total = 0;
 		for (Video video: this.videos) {
 			total += video.mediaAvaliacoes();
-		return total;
 		}
+		return total;
 	}
 	
 }
