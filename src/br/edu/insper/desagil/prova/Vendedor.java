@@ -1,5 +1,5 @@
 package br.edu.insper.desagil.prova;
 
-public class classe1 {
+public class Vendedor {
 
 }
